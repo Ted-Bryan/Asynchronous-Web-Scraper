@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Quick Start
+## Quick Start
 
 ```bash
 # Clone or download the files
