@@ -44,7 +44,7 @@ The whole job is under 100 lines of code yet demonstrates practical use of
 ## Requirements<a id="requirements"></a>
 
 | Package          | Minimum version |
-| ---------------- | --------------: |
+| ---------------- | --------------  |
 | Python           | 3.8 recommended |
 | aiohttp          | 3.9            |
 | BeautifulSoup4   | 4.12           |
@@ -87,7 +87,7 @@ fetching.
 
 ## Project walkthrough<a id="project-walkthrough"></a>
 | Section in scraper.py | What it does |
-| ----------------:  | --------------: |
+| ----------------   | --------------  |
 | BASE_URL & crawl() | Fetches the master list page and extracts every <a> in the multi-column div. |
 | fetch(url)         | Re-usable coroutine that opens a URL with aiohttp and returns raw HTML.      |
 | scrape(link)       | Parses one language article, picking out the name (infobox caption) and the row containing “Developer” / “Designed by”. |
@@ -124,7 +124,7 @@ df.to_csv("languages.csv", index=False)
 
 ## Troubleshooting<a id="troubleshooting"></a>
 | Symptom                        | Fix             |
-| ----------------:              | --------------: |
+| ----------------               | --------------  |
 | ImportError: aiohttp not found | Run pip install aiohttp inside your activated venv. |
 | Endless redirects / 403 errors | Wikipedia occasionally rate-limits; wait a minute or lower concurrency. |
 | RuntimeError: Event loop is closed (Windows + Python < 3.11) | Replace asyncio.run(main()) with a custom event-loop policy or upgrade Python. |
