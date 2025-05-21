@@ -26,16 +26,16 @@ The whole job is under 100 lines of code yet demonstrates practical use of
 
 * **Asynchronous networking** — pages are fetched concurrently with
   `aiohttp`, giving a significant speed boost compared to sequential
-  requests. :contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}  
+  requests.
 * **Automatic link discovery** — the script first scrapes
   `https://en.wikipedia.org/wiki/List_of_programming_languages`,
   collects every language link inside the `<div class="div-col">` list, and
-  queues them for processing. :contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}  
+  queues them for processing.
 * **HTML parsing with BeautifulSoup** — pulls the language name from the
   page’s infobox caption and attempts to grab the creator / designer from the
-  corresponding table rows. :contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}  
+  corresponding table rows.
 * **Pretty-print output** — results are currently printed as a Python list
-  so you can inspect them quickly in the console. :contentReference[oaicite:8]{index=8}:contentReference[oaicite:9]{index=9}  
+  so you can inspect them quickly in the console.
 * Zero external framework overhead — everything is plain Python,
   making the script easy to read, hack, and repurpose.
 
